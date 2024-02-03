@@ -1,0 +1,7 @@
+set(EXE_SOURCES
+    "${CMAKE_CURRENT_SOURCE_DIR}/main.cc")
+
+add_executable(${EXECUTABLE_NAME} ${EXE_SOURCES})
+target_link_libraries(${EXECUTABLE_NAME} PUBLIC
+    ${OBSERVER_LIBRARY_NAME}
+    ${DEVICE_LIBRARY_NAME})
